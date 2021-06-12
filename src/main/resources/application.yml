@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mycdb?characterEncoding=utf-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: myc
+    password: myc1998
+    driver-class-name: com.mysql.cj.jdbc.Driver
+criterion:
+  email: '^([a-z0-9A-Z]+[-|\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\.)+[a-zA-Z]{2,}$'
+  phone: '[1][358]\d{9}'
+star:
+  success:
+    number: 1
+    char: success
+  fail:
+    number: -1
+    char: fail
+  username: username
+  password: password
+  email: email
+  phone: phone
+  id: id
+  time:
+    number: 0
+    char: time
+  map:
+    code: code
+    data: data
+    key: key
+    type: type
+  msg:
+    send: send
+    msg: msg
+    time:
+      old: 0
+      new: 1
+    type: type
+    set: set
+
+
+
