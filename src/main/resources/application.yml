@@ -40,6 +40,21 @@ star:
       new: 1
     type: type
     set: set
+#配置日志
+logging:
+  level:
+    #不同目录下的日志可配置不同级别
+    org.springfromework.web: INFO
+    org.hibernate: ERROR
+    com.example.demo.dao: trace
+  #采用相对路径方式将日志文件输出到【log/springboot.log】
+  file:
+    name: log/springboot.log
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 
 
 
