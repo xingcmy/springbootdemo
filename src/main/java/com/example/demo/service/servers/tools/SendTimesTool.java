@@ -1,4 +1,4 @@
-package com.example.demo.controller.servers.tools;
+package com.example.demo.service.servers.tools;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
