@@ -51,6 +51,7 @@ logging:
   file:
     name: log/springboot.log
 
+# 打印sql.log
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
