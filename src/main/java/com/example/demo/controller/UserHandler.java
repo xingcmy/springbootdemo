@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.Information;
-import com.example.demo.entity.interfaces.repository.InformationRepository;
+import com.example.demo.entity.User;
+import com.example.demo.entity.interfaces.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/information")
-public class InformationHandler {
+@RequestMapping("/user")
+public class UserHandler {
+
     @Autowired
-    private InformationRepository informationRepository;
+    private UserRepository userRepository;
 
     @GetMapping("/findAll")
-    public List<Information> findAll(){
-        return informationRepository.findAll();
+    public List<User> findAll(){
+        return userRepository.findAll();
     }
 }
