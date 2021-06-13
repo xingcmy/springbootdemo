@@ -1,93 +1,69 @@
-2021-06-12 23:08:18.909  INFO 13308 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 13308 (D:\Myc Program\java\demo\target\classes started by 霂雨晨 in D:\Myc Program\java\demo)
-2021-06-12 23:08:18.911  INFO 13308 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
-2021-06-12 23:08:18.954  INFO 13308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-12 23:08:18.954  INFO 13308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-12 23:08:19.354  INFO 13308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-06-12 23:08:19.385  INFO 13308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
-2021-06-12 23:08:19.551  INFO 13308 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4dbd699c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-06-12 23:08:19.577  INFO 13308 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2021-06-12 23:08:19.764  INFO 13308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-06-12 23:08:19.769  INFO 13308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-06-12 23:08:19.769  INFO 13308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-06-12 23:08:19.843  INFO 13308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-06-12 23:08:19.843  INFO 13308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 888 ms
-2021-06-12 23:08:19.925  INFO 13308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-06-12 23:08:20.005  INFO 13308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-06-12 23:08:20.465  INFO 13308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-06-12 23:08:20.471  INFO 13308 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public java.util.List com.example.demo.controller.InformationHandler.findAll()
-2021-06-12 23:08:20.553  INFO 13308 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-12 23:08:20.577  WARN 13308 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-06-12 23:08:20.892  INFO 13308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-06-12 23:08:20.920  INFO 13308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-06-12 23:08:20.927  INFO 13308 --- [restartedMain] com.example.demo.App                     : Started App in 2.329 seconds (JVM running for 2.845)
-2021-06-12 23:11:33.048  INFO 13308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-12 23:11:33.049  INFO 13308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-06-12 23:11:33.050  INFO 13308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-12 23:16:59.346  INFO 13308 --- [http-nio-8080-exec-8] c.e.d.c.servers.serives.LoginServer      : {code=1, data=u_NUsu@sVw>cTc_z~sueO, username=6666, password=1234556, key=[7, 2], time=0}
-2021-06-12 23:16:59.346  INFO 13308 --- [http-nio-8080-exec-8] c.e.d.c.servers.tools.BooleanTool        : 0
-2021-06-12 23:16:59.346  INFO 13308 --- [http-nio-8080-exec-8] c.e.d.c.servers.tools.BooleanTool        : null
-2021-06-12 23:16:59.347  INFO 13308 --- [http-nio-8080-exec-8] c.e.d.c.servers.GraduationServers        : {code=1, data=u_NUsu@sVw>cTc_z~sueO, username=6666, password=1234556, key=[7, 2], time=0}
-2021-06-12 23:17:13.852  INFO 13308 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-12 23:17:13.852  INFO 13308 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-06-12 23:17:13.854  INFO 13308 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-06-12 23:17:13.858  INFO 13308 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-06-12 23:17:13.904  INFO 13308 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 13308 (D:\Myc Program\java\demo\target\classes started by 霂雨晨 in D:\Myc Program\java\demo)
-2021-06-12 23:17:13.905  INFO 13308 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
-2021-06-12 23:17:14.015  INFO 13308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-06-12 23:17:14.024  INFO 13308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
-2021-06-12 23:17:14.052  INFO 13308 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4dbd699c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-06-12 23:17:14.055  INFO 13308 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2021-06-12 23:17:14.089  INFO 13308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-06-12 23:17:14.090  INFO 13308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-06-12 23:17:14.090  INFO 13308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-06-12 23:17:14.115  INFO 13308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-06-12 23:17:14.115  INFO 13308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
-2021-06-12 23:17:14.136  INFO 13308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2021-06-12 23:17:14.139  INFO 13308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2021-06-12 23:17:14.166  INFO 13308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-06-12 23:17:14.169  INFO 13308 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public java.util.List com.example.demo.controller.InformationHandler.findAll()
-2021-06-12 23:17:14.193  INFO 13308 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-12 23:17:14.199  WARN 13308 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-06-12 23:17:14.296  INFO 13308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-06-12 23:17:14.307  INFO 13308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-06-12 23:17:14.310  INFO 13308 --- [restartedMain] com.example.demo.App                     : Started App in 0.426 seconds (JVM running for 536.228)
-2021-06-12 23:17:14.311  INFO 13308 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-06-12 23:19:36.180  INFO 21080 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 21080 (D:\Myc Program\java\demo\target\classes started by 霂雨晨 in D:\Myc Program\java\demo)
-2021-06-12 23:19:36.182  INFO 21080 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
-2021-06-12 23:19:36.217  INFO 21080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-12 23:19:36.217  INFO 21080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-12 23:19:36.605  INFO 21080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-06-12 23:19:36.636  INFO 21080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
-2021-06-12 23:19:36.802  INFO 21080 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$753bd327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-06-12 23:19:36.831  INFO 21080 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2021-06-12 23:19:37.049  INFO 21080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-06-12 23:19:37.055  INFO 21080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-06-12 23:19:37.056  INFO 21080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-06-12 23:19:37.137  INFO 21080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-06-12 23:19:37.138  INFO 21080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
-2021-06-12 23:19:37.224  INFO 21080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-06-12 23:19:37.313  INFO 21080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-06-12 23:19:37.814  INFO 21080 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-06-12 23:19:37.819  INFO 21080 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public java.util.List com.example.demo.controller.InformationHandler.findAll()
-2021-06-12 23:19:37.894  INFO 21080 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-12 23:19:37.912  WARN 21080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-06-12 23:19:38.220  INFO 21080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-06-12 23:19:38.247  INFO 21080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-06-12 23:19:38.254  INFO 21080 --- [restartedMain] com.example.demo.App                     : Started App in 2.382 seconds (JVM running for 2.897)
-2021-06-12 23:19:59.540  INFO 21080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-12 23:19:59.541  INFO 21080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-06-12 23:19:59.541  INFO 21080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-06-12 23:19:59.582 DEBUG 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : ==>  Preparing: select password from user where email=?
-2021-06-12 23:19:59.594 DEBUG 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : ==> Parameters: 1410025842@qq.com(String)
-2021-06-12 23:19:59.605 TRACE 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==    Columns: password
-2021-06-12 23:19:59.605 TRACE 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==        Row: 1234556
-2021-06-12 23:19:59.608 DEBUG 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==      Total: 1
-2021-06-12 23:19:59.622 DEBUG 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.SelectDB.selectUserId       : ==>  Preparing: select id from user where email=?
-2021-06-12 23:19:59.622 DEBUG 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.SelectDB.selectUserId       : ==> Parameters: 1410025842@qq.com(String)
-2021-06-12 23:19:59.623 TRACE 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==    Columns: id
-2021-06-12 23:19:59.623 TRACE 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==        Row: 6666
-2021-06-12 23:19:59.623 DEBUG 21080 --- [http-nio-8080-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==      Total: 1
-2021-06-12 23:19:59.623  INFO 21080 --- [http-nio-8080-exec-1] c.e.d.c.servers.serives.LoginServer      : {code=1, data=u_NUsu@sVw>cTc_z~sueO, username=6666, password=1234556, key=[7, 2], time=0}
-2021-06-12 23:19:59.623  INFO 21080 --- [http-nio-8080-exec-1] c.e.d.c.servers.tools.BooleanTool        : 0
-2021-06-12 23:19:59.624  INFO 21080 --- [http-nio-8080-exec-1] c.e.d.c.servers.tools.BooleanTool        : null
-2021-06-12 23:19:59.625  INFO 21080 --- [http-nio-8080-exec-1] c.e.d.c.servers.GraduationServers        : {code=1, data=u_NUsu@sVw>cTc_z~sueO, username=6666, password=1234556, key=[7, 2], time=0}
+2021-06-13 14:12:45.167  INFO 6628 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 6628 (D:\Myc Program\java\demo\target\classes started by 霂雨晨 in D:\Myc Program\java\demo)
+2021-06-13 14:12:45.172  INFO 6628 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-13 14:12:45.214  INFO 6628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-13 14:12:45.215  INFO 6628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-13 14:12:45.734  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-13 14:12:45.775  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2021-06-13 14:12:45.998  INFO 6628 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ee87b03e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-13 14:12:46.050  INFO 6628 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-13 14:12:46.284  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-13 14:12:46.290  INFO 6628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-13 14:12:46.290  INFO 6628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-13 14:12:46.361  INFO 6628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-13 14:12:46.361  INFO 6628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2021-06-13 14:12:46.443  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 14:12:46.545  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 14:12:47.052  INFO 6628 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-13 14:12:47.252  INFO 6628 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-13 14:12:47.277  WARN 6628 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-13 14:12:47.473  INFO 6628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-13 14:12:47.501  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-13 14:12:47.507  INFO 6628 --- [restartedMain] com.example.demo.App                     : Started App in 2.684 seconds (JVM running for 3.343)
+2021-06-13 14:14:28.573  INFO 6628 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-13 14:14:28.573  INFO 6628 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-13 14:14:28.585  INFO 6628 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 14:14:28.590  INFO 6628 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-13 14:14:28.655  INFO 6628 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 6628 (D:\Myc Program\java\demo\target\classes started by 霂雨晨 in D:\Myc Program\java\demo)
+2021-06-13 14:14:28.655  INFO 6628 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-13 14:14:28.785  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-13 14:14:28.797  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2021-06-13 14:14:28.827  INFO 6628 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ee87b03e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-13 14:14:28.830  INFO 6628 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-13 14:14:28.862  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-13 14:14:28.862  INFO 6628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-13 14:14:28.863  INFO 6628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-13 14:14:28.888  INFO 6628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-13 14:14:28.888  INFO 6628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2021-06-13 14:14:28.911  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-06-13 14:14:28.914  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-06-13 14:14:28.945  INFO 6628 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-13 14:14:29.015  INFO 6628 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-13 14:14:29.023  WARN 6628 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-13 14:14:29.092  INFO 6628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-13 14:14:29.103  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-13 14:14:29.106  INFO 6628 --- [restartedMain] com.example.demo.App                     : Started App in 0.484 seconds (JVM running for 104.942)
+2021-06-13 14:14:29.108  INFO 6628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-13 14:14:30.525  INFO 6628 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-13 14:14:30.526  INFO 6628 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-13 14:14:30.526  INFO 6628 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-06-13 14:14:30.529  INFO 6628 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-06-13 14:14:30.571  INFO 6628 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 6628 (D:\Myc Program\java\demo\target\classes started by 霂雨晨 in D:\Myc Program\java\demo)
+2021-06-13 14:14:30.572  INFO 6628 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-13 14:14:30.672  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-13 14:14:30.682  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2021-06-13 14:14:30.707  INFO 6628 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ee87b03e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-13 14:14:30.710  INFO 6628 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-13 14:14:30.745  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-13 14:14:30.746  INFO 6628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-13 14:14:30.746  INFO 6628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-13 14:14:30.769  INFO 6628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-13 14:14:30.769  INFO 6628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2021-06-13 14:14:30.787  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-06-13 14:14:30.790  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-06-13 14:14:30.813  INFO 6628 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-13 14:14:30.863  INFO 6628 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-13 14:14:30.868  WARN 6628 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-13 14:14:30.922  INFO 6628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-13 14:14:30.932  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-13 14:14:30.934  INFO 6628 --- [restartedMain] com.example.demo.App                     : Started App in 0.379 seconds (JVM running for 106.77)
+2021-06-13 14:14:30.935  INFO 6628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
