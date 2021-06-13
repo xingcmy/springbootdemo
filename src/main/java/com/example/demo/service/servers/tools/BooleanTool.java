@@ -77,7 +77,7 @@ public class BooleanTool implements IsLongTime, IsNull, IsBoolean, Compare {
         if(o ==  null){
             return true;
         }
-        if(o.get(star.username).toString() == null){
+        if(!o.containsKey(star.username)){
             return true;
         }
         return false;

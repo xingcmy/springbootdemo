@@ -24,13 +24,20 @@ public class LogInAddOut {
 
     @PostMapping("/in")
     public Map<String,Object> login(@RequestBody Map<String,Object> objectMap){
-        if (objectMap == null)
-            throw new NullErrorException("The incoming value is null");
+        if (objectMap.size()<=0)
+            throw new NullErrorException("The incoming value is null!");
         log.info(objectMap.toString());
         loginServer.setObject(objectMap);
         if (loginServer.logIn()){
             return dataSecurity.setData(star.success);
         }
+        return dataSecurity.setData(star.fail);
+    }
+
+    @PostMapping("/out")
+    public Map<String,Object> logout(@RequestBody Map<String,Object> objectMap){
+        if (objectMap.size()<=0)
+            throw new NullErrorException("The incoming value is null!");
         return dataSecurity.setData(star.fail);
     }
 }
