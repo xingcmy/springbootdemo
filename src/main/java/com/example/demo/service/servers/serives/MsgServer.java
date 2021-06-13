@@ -1,7 +1,7 @@
-package com.example.demo.controller.servers.serives;
+package com.example.demo.service.servers.serives;
 
-import com.example.demo.controller.servers.tools.Star;
-import com.example.demo.controller.servers.tools.msg.Msg;
+import com.example.demo.service.servers.tools.Star;
+import com.example.demo.service.servers.tools.msg.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

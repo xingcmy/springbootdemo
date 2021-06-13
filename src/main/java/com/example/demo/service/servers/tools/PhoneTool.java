@@ -1,4 +1,4 @@
-package com.example.demo.controller.servers.tools;
+package com.example.demo.service.servers.tools;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

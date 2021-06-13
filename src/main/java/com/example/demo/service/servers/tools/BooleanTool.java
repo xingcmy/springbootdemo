@@ -1,10 +1,10 @@
-package com.example.demo.controller.servers.tools;
+package com.example.demo.service.servers.tools;
 
-import com.example.demo.controller.servers.tools.interfaces.Compare;
-import com.example.demo.controller.servers.tools.interfaces.IsBoolean;
-import com.example.demo.controller.servers.tools.interfaces.IsLongTime;
-import com.example.demo.controller.servers.tools.interfaces.IsNull;
-import com.example.demo.controller.servers.tools.msg.Time;
+import com.example.demo.service.servers.tools.interfaces.Compare;
+import com.example.demo.service.servers.tools.interfaces.IsBoolean;
+import com.example.demo.service.servers.tools.interfaces.IsLongTime;
+import com.example.demo.service.servers.tools.interfaces.IsNull;
+import com.example.demo.service.servers.tools.msg.Time;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

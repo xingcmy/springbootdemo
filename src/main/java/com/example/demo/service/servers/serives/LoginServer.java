@@ -1,38 +1,23 @@
-package com.example.demo.controller.servers.serives;
+package com.example.demo.service.servers.serives;
 
-import com.example.demo.controller.servers.tools.*;
-import com.example.demo.dao.LoginSelect;
-import com.example.demo.dao.SelectDB;
-import lombok.Data;
+import com.example.demo.service.servers.tools.BooleanTool;
+import com.example.demo.service.servers.tools.SendIDTool;
+import com.example.demo.service.servers.tools.SendTimesTool;
+import com.example.demo.service.servers.tools.Star;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
 @Component
 @Log
-@Data
 public class LoginServer {
 
     @Autowired
-    private LoginSelect loginSelect;
-
-    @Autowired
-    private SelectDB selectDB;
-
-    @Autowired
     private BooleanTool booleanTool;
-
-    @Autowired
-    private EmailTool emailTool;
-
-    @Autowired
-    private PhoneTool phoneTool;
 
     @Autowired
     private SendTimesTool sendTimesTool;
@@ -43,12 +28,6 @@ public class LoginServer {
     @Autowired
     private Star star;
 
-    @Value("${star.success.char}")
-    private String success;
-
-    @Value("${star.fail.char}")
-    private String fail;
-
     @Getter
     @Setter
     private Map<String,Object> object;
@@ -57,7 +36,7 @@ public class LoginServer {
         this.object=object;
     }
 
-    public boolean login(){
+    public boolean logIn(){
         if (!booleanTool.isNullOrFalse(object)){
             String password = object.get(star.password).toString();
             while (true){

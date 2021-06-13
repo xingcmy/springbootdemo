@@ -1,4 +1,4 @@
-package com.example.demo.controller.servers.tools.interfaces;
+package com.example.demo.service.servers.tools.interfaces;
 
 import java.util.Map;
 

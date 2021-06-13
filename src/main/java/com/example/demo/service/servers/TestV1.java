@@ -1,4 +1,4 @@
-package com.example.demo.controller.servers;
+package com.example.demo.service.servers;
 
 
 import com.example.demo.dao.InsertDB;

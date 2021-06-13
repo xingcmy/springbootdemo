@@ -1,4 +1,4 @@
-package com.example.demo.controller.servers.tools;
+package com.example.demo.service.servers.tools;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
@@ -50,4 +50,10 @@ public class Star {
 
     @Value("${star.msg.set}")
     public String set;
+
+    @Value("${star.success.char}")
+    public String success;
+
+    @Value("${star.fail.char}")
+    public String fail;
 }

@@ -1,9 +1,7 @@
-package com.example.demo.controller.servers.tools;
+package com.example.demo.service.servers.tools;
 
-import lombok.Data;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 import sun.misc.Unsafe;
 

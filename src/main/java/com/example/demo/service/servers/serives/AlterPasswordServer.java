@@ -1,8 +1,8 @@
-package com.example.demo.controller.servers.serives;
+package com.example.demo.service.servers.serives;
 
-import com.example.demo.controller.servers.tools.SendIDTool;
-import com.example.demo.controller.servers.tools.Star;
 import com.example.demo.dao.UpdateDB;
+import com.example.demo.service.servers.tools.SendIDTool;
+import com.example.demo.service.servers.tools.Star;
 import lombok.Data;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;

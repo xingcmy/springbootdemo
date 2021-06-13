@@ -1,4 +1,4 @@
-package com.example.demo.controller.servers.tools.msg;
+package com.example.demo.service.servers.tools.msg;
 
 import lombok.Data;
 
