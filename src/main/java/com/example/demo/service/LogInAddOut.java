@@ -27,8 +27,7 @@ public class LogInAddOut {
         if (objectMap.size()<=0)
             throw new NullErrorException("The incoming value is null!");
         log.info(objectMap.toString());
-        loginServer.setObject(objectMap);
-        if (loginServer.logIn()){
+        if (loginServer.logIn(objectMap)){
             return dataSecurity.setData(star.success);
         }
         return dataSecurity.setData(star.fail);

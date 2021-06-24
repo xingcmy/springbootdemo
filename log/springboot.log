@@ -1,38 +1,719 @@
-2021-06-17 09:38:19.800  INFO 8020 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 8020 (D:\Myc Program\java\springbootdemo\target\classes started by 霂雨晨 in D:\Myc Program\java\springbootdemo)
-2021-06-17 09:38:19.805  INFO 8020 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
-2021-06-17 09:38:19.842  INFO 8020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-17 09:38:19.843  INFO 8020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-17 09:38:20.265  INFO 8020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-06-17 09:38:20.303  INFO 8020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
-2021-06-17 09:38:20.477  INFO 8020 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$be6d4963] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-06-17 09:38:20.513  INFO 8020 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2021-06-17 09:38:20.700  INFO 8020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
-2021-06-17 09:38:20.706  INFO 8020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-06-17 09:38:20.706  INFO 8020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-06-17 09:38:20.767  INFO 8020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
-2021-06-17 09:38:20.767  INFO 8020 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 924 ms
-2021-06-17 09:38:20.847  INFO 8020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-06-17 09:38:20.941  INFO 8020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-06-17 09:38:21.471  INFO 8020 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-06-17 09:38:21.691  INFO 8020 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-17 09:38:21.714  WARN 8020 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-06-17 09:38:21.914  INFO 8020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-06-17 09:38:21.937  INFO 8020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path '/demo'
-2021-06-17 09:38:21.944  INFO 8020 --- [restartedMain] com.example.demo.App                     : Started App in 2.463 seconds (JVM running for 3.054)
-2021-06-17 09:39:09.227  INFO 8020 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-17 09:39:09.227  INFO 8020 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-06-17 09:39:09.228  INFO 8020 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-17 09:39:09.268  INFO 8020 --- [http-nio-9527-exec-1] com.example.demo.service.LogInAddOut     : {username=1410025842@qq.com, password=1234556}
-2021-06-17 09:39:09.280 DEBUG 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : ==>  Preparing: select password from user where email=?
-2021-06-17 09:39:09.292 DEBUG 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : ==> Parameters: 1410025842@qq.com(String)
-2021-06-17 09:39:09.312 TRACE 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==    Columns: password
-2021-06-17 09:39:09.312 TRACE 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==        Row: 1234556
-2021-06-17 09:39:09.315 DEBUG 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==      Total: 1
-2021-06-17 09:39:09.333 DEBUG 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : ==>  Preparing: select id from user where email=?
-2021-06-17 09:39:09.333 DEBUG 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : ==> Parameters: 1410025842@qq.com(String)
-2021-06-17 09:39:09.334 TRACE 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==    Columns: id
-2021-06-17 09:39:09.334 TRACE 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==        Row: 6666
-2021-06-17 09:39:09.335 DEBUG 8020 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==      Total: 1
-2021-06-17 09:39:09.335  INFO 8020 --- [http-nio-9527-exec-1] c.e.d.s.servers.serives.LoginServer      : {username=6666, password=1234556, time=0}
-2021-06-17 09:39:09.335  INFO 8020 --- [http-nio-9527-exec-1] c.e.d.service.servers.tools.BooleanTool  : 0
-2021-06-17 09:39:09.336  INFO 8020 --- [http-nio-9527-exec-1] c.e.d.service.servers.tools.BooleanTool  : null
+2021-06-24 14:10:24.898  INFO 12500 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 12500 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:10:24.902  INFO 12500 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:10:24.936  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:10:24.936  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:10:25.406  INFO 12500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:10:25.446  INFO 12500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:10:25.632  INFO 12500 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5fed70ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:10:25.675  INFO 12500 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:10:25.889  INFO 12500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:10:25.897  INFO 12500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:10:25.897  INFO 12500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:10:25.969  INFO 12500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:10:25.970  INFO 12500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
+2021-06-24 14:10:26.065  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:10:26.186  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:10:26.742  INFO 12500 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:10:26.985  INFO 12500 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:10:27.011  WARN 12500 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:10:27.143  WARN 12500 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logInAddOut': Unsatisfied dependency expressed through field 'loginServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+2021-06-24 14:10:27.144  INFO 12500 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:10:27.144  INFO 12500 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:10:27.146  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-24 14:10:27.149  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-24 14:10:27.150  INFO 12500 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-24 14:10:27.157  INFO 12500 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-24 14:10:27.170 ERROR 12500 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logInAddOut': Unsatisfied dependency expressed through field 'loginServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1598) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1481) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 56 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1088) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1030) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 57 common frames omitted
+
+2021-06-24 14:11:30.499  INFO 2172 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 2172 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:11:30.501  INFO 2172 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:11:30.532  INFO 2172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:11:30.533  INFO 2172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:11:30.944  INFO 2172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:11:30.980  INFO 2172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:11:31.145  INFO 2172 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5e83d88e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:11:31.174  INFO 2172 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:11:31.368  INFO 2172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:11:31.374  INFO 2172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:11:31.374  INFO 2172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:11:31.436  INFO 2172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:11:31.437  INFO 2172 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
+2021-06-24 14:11:31.519  INFO 2172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:11:31.602  INFO 2172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:11:32.049  INFO 2172 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:11:32.282  INFO 2172 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:11:32.304  WARN 2172 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:11:32.417  WARN 2172 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logInAddOut': Unsatisfied dependency expressed through field 'loginServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+2021-06-24 14:11:32.418  INFO 2172 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:11:32.419  INFO 2172 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:11:32.420  INFO 2172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-24 14:11:32.424  INFO 2172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-24 14:11:32.425  INFO 2172 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-24 14:11:32.433  INFO 2172 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-24 14:11:32.449 ERROR 2172 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logInAddOut': Unsatisfied dependency expressed through field 'loginServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1598) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1481) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 56 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1088) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1030) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 57 common frames omitted
+
+2021-06-24 14:13:52.287  INFO 7212 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 7212 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:13:52.289  INFO 7212 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:13:52.323  INFO 7212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:13:52.323  INFO 7212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:13:52.732  INFO 7212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:13:52.769  INFO 7212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:13:52.943  INFO 7212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7874308a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:13:52.971  INFO 7212 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:13:53.172  INFO 7212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:13:53.180  INFO 7212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:13:53.180  INFO 7212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:13:53.244  INFO 7212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:13:53.244  INFO 7212 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 920 ms
+2021-06-24 14:13:53.327  INFO 7212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:13:53.408  INFO 7212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:13:53.861  INFO 7212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:13:54.090  INFO 7212 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:13:54.110  WARN 7212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:13:54.223  WARN 7212 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logInAddOut': Unsatisfied dependency expressed through field 'loginServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+2021-06-24 14:13:54.223  INFO 7212 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:13:54.224  INFO 7212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:13:54.226  INFO 7212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-24 14:13:54.231  INFO 7212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-24 14:13:54.231  INFO 7212 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-24 14:13:54.238  INFO 7212 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-24 14:13:54.252 ERROR 7212 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logInAddOut': Unsatisfied dependency expressed through field 'loginServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServer' defined in file [D:\MycProgram\java\springbootdemo\target\classes\com\example\demo\service\servers\serives\LoginServer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1598) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1481) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 56 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1088) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1030) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 57 common frames omitted
+
+2021-06-24 14:32:40.270  INFO 16964 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 16964 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:32:40.273  INFO 16964 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:32:40.305  INFO 16964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:32:40.306  INFO 16964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:32:40.378  WARN 16964 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.App]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'registerServer' for bean class [com.example.demo.service.servers.serives.RegisterServer] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.service.impl.RegisterServer]
+2021-06-24 14:32:40.397 ERROR 16964 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.App]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'registerServer' for bean class [com.example.demo.service.servers.serives.RegisterServer] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.service.impl.RegisterServer]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'registerServer' for bean class [com.example.demo.service.servers.serives.RegisterServer] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.service.impl.RegisterServer]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.6.jar:5.3.6]
+	... 19 common frames omitted
+
+2021-06-24 14:35:28.876  INFO 12432 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 12432 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:35:28.878  INFO 12432 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:35:28.909  INFO 12432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:35:28.909  INFO 12432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:35:29.284  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:35:29.324  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:35:29.428 ERROR 12432 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'msgServer' for bean class [com.example.demo.service.servers.serives.MsgServer] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.service.impl.MsgServer]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:310) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:204) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:375) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+
+2021-06-24 14:38:21.533  INFO 16560 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 16560 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:38:21.535  INFO 16560 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:38:21.567  INFO 16560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:38:21.567  INFO 16560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:38:21.944  INFO 16560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:38:21.986  INFO 16560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:38:22.150  INFO 16560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a12ab35e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:38:22.176  INFO 16560 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:38:22.362  INFO 16560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:38:22.369  INFO 16560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:38:22.369  INFO 16560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:38:22.429  INFO 16560 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:38:22.430  INFO 16560 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+2021-06-24 14:38:22.510  INFO 16560 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:38:22.588  INFO 16560 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:38:23.016  INFO 16560 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:38:23.238  WARN 16560 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:38:23.287  INFO 16560 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:38:23.340  WARN 16560 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+2021-06-24 14:38:23.340  INFO 16560 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:38:23.341  INFO 16560 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:38:23.342  INFO 16560 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-24 14:38:23.347  INFO 16560 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-24 14:38:23.348  INFO 16560 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-24 14:38:23.355  INFO 16560 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-24 14:38:23.368 ERROR 16560 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1088) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1030) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+
+2021-06-24 14:39:19.498  INFO 15896 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 15896 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:39:19.501  INFO 15896 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:39:19.536  INFO 15896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:39:19.536  INFO 15896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:39:19.976  INFO 15896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:39:20.015  INFO 15896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:39:20.170  INFO 15896 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f310446d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:39:20.194  INFO 15896 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:39:20.373  INFO 15896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:39:20.378  INFO 15896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:39:20.379  INFO 15896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:39:20.440  INFO 15896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:39:20.440  INFO 15896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
+2021-06-24 14:39:20.518  INFO 15896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:39:20.591  INFO 15896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:39:20.993  INFO 15896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:39:21.204  WARN 15896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:39:21.252  INFO 15896 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:39:21.304  WARN 15896 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+2021-06-24 14:39:21.305  INFO 15896 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:39:21.306  INFO 15896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:39:21.308  INFO 15896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-24 14:39:21.312  INFO 15896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-24 14:39:21.313  INFO 15896 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-24 14:39:21.324  INFO 15896 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-24 14:39:21.337 ERROR 15896 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1088) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1030) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+
+2021-06-24 14:41:07.126  INFO 13412 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 13412 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:41:07.128  INFO 13412 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:41:07.159  INFO 13412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:41:07.159  INFO 13412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:41:07.543  INFO 13412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:41:07.577  INFO 13412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:41:07.731  INFO 13412 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8186d352] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:41:07.762  INFO 13412 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:41:07.938  INFO 13412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:41:07.944  INFO 13412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:41:07.944  INFO 13412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:41:08.009  INFO 13412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:41:08.009  INFO 13412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 849 ms
+2021-06-24 14:41:08.084  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:41:08.157  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:41:08.574  INFO 13412 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:41:08.799  WARN 13412 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:41:08.848  INFO 13412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:41:08.902  WARN 13412 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+2021-06-24 14:41:08.903  INFO 13412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:41:08.903  INFO 13412 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:41:08.905  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-24 14:41:08.910  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-24 14:41:08.911  INFO 13412 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-24 14:41:08.918  INFO 13412 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-24 14:41:08.931 ERROR 13412 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.App.main(App.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class java.lang.Exception]: {private java.util.Map com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception), public com.example.demo.config.exception.AjaxResult com.example.demo.handler.GlobalExceptionHandler.exceptionHandler(java.lang.Exception)}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1088) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1030) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+
+2021-06-24 14:42:56.347  INFO 5624 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 5624 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:42:56.350  INFO 5624 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:42:56.381  INFO 5624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:42:56.381  INFO 5624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:42:56.758  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:42:56.793  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:42:56.944  INFO 5624 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e3097784] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:42:56.970  INFO 5624 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:42:57.150  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:42:57.155  INFO 5624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:42:57.155  INFO 5624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:42:57.220  INFO 5624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:42:57.220  INFO 5624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 839 ms
+2021-06-24 14:42:57.296  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:42:57.366  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:42:57.781  INFO 5624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:42:57.994  WARN 5624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:42:58.045  INFO 5624 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:42:58.175  INFO 5624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-24 14:42:58.204  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path '/demo'
+2021-06-24 14:42:58.214  INFO 5624 --- [restartedMain] com.example.demo.App                     : Started App in 2.111 seconds (JVM running for 2.623)
+2021-06-24 14:44:17.742  INFO 5624 --- [http-nio-9527-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-24 14:44:17.742  INFO 5624 --- [http-nio-9527-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-24 14:44:17.743  INFO 5624 --- [http-nio-9527-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-24 14:44:17.777  INFO 5624 --- [http-nio-9527-exec-4] com.example.demo.service.LogInAddOut     : {username=1410025842@qq.com, password=1234556}
+2021-06-24 14:44:17.787 DEBUG 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.LoginSelect.emailLogin      : ==>  Preparing: select password from user where email=?
+2021-06-24 14:44:17.797 DEBUG 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.LoginSelect.emailLogin      : ==> Parameters: 1410025842@qq.com(String)
+2021-06-24 14:44:17.808 TRACE 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.LoginSelect.emailLogin      : <==    Columns: password
+2021-06-24 14:44:17.809 TRACE 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.LoginSelect.emailLogin      : <==        Row: 1234556
+2021-06-24 14:44:17.811 DEBUG 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.LoginSelect.emailLogin      : <==      Total: 1
+2021-06-24 14:44:17.831 DEBUG 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.SelectDB.selectUserId       : ==>  Preparing: select id from user where email=?
+2021-06-24 14:44:17.831 DEBUG 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.SelectDB.selectUserId       : ==> Parameters: 1410025842@qq.com(String)
+2021-06-24 14:44:17.832 TRACE 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.SelectDB.selectUserId       : <==    Columns: id
+2021-06-24 14:44:17.832 TRACE 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.SelectDB.selectUserId       : <==        Row: 6666
+2021-06-24 14:44:17.832 DEBUG 5624 --- [http-nio-9527-exec-4] c.e.demo.dao.SelectDB.selectUserId       : <==      Total: 1
+2021-06-24 14:44:17.832  INFO 5624 --- [http-nio-9527-exec-4] c.e.demo.service.impl.LoginServerImpl    : {username=6666, password=1234556, time=0}
+2021-06-24 14:44:17.832  INFO 5624 --- [http-nio-9527-exec-4] c.e.d.service.servers.tools.BooleanTool  : 0
+2021-06-24 14:44:17.833  INFO 5624 --- [http-nio-9527-exec-4] c.e.d.service.servers.tools.BooleanTool  : null
+2021-06-24 14:44:37.045  INFO 5624 --- [http-nio-9527-exec-10] c.e.d.s.impl.AlterPasswordServerImpl     : 1234556
+2021-06-24 14:44:37.046 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.LoginSelect.emailLogin      : ==>  Preparing: select password from user where email=?
+2021-06-24 14:44:37.046 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.LoginSelect.emailLogin      : ==> Parameters: 1410025842@qq.com(String)
+2021-06-24 14:44:37.047 TRACE 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.LoginSelect.emailLogin      : <==    Columns: password
+2021-06-24 14:44:37.047 TRACE 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.LoginSelect.emailLogin      : <==        Row: 1234556
+2021-06-24 14:44:37.047 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.LoginSelect.emailLogin      : <==      Total: 1
+2021-06-24 14:44:37.047 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.SelectDB.selectUserId       : ==>  Preparing: select id from user where email=?
+2021-06-24 14:44:37.047 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.SelectDB.selectUserId       : ==> Parameters: 1410025842@qq.com(String)
+2021-06-24 14:44:37.047 TRACE 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.SelectDB.selectUserId       : <==    Columns: id
+2021-06-24 14:44:37.047 TRACE 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.SelectDB.selectUserId       : <==        Row: 6666
+2021-06-24 14:44:37.048 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.demo.dao.SelectDB.selectUserId       : <==      Total: 1
+2021-06-24 14:44:37.048  INFO 5624 --- [http-nio-9527-exec-10] c.e.d.s.impl.AlterPasswordServerImpl     : {username=6666, password=1234556}
+2021-06-24 14:44:37.048 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.d.dao.UpdateDB.updateUserPassword    : ==>  Preparing: update user set password=? where id=?
+2021-06-24 14:44:37.048 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.d.dao.UpdateDB.updateUserPassword    : ==> Parameters: 1234556(String), 6666(String)
+2021-06-24 14:44:37.059 DEBUG 5624 --- [http-nio-9527-exec-10] c.e.d.dao.UpdateDB.updateUserPassword    : <==    Updates: 1
+2021-06-24 14:45:50.409  INFO 460 --- [restartedMain] com.example.demo.App                     : Starting App using Java 14.0.1 on LAPTOP-BCPSRR5J with PID 460 (D:\MycProgram\java\springbootdemo\target\classes started by 霂雨晨 in D:\MycProgram\java\springbootdemo)
+2021-06-24 14:45:50.412  INFO 460 --- [restartedMain] com.example.demo.App                     : No active profile set, falling back to default profiles: default
+2021-06-24 14:45:50.442  INFO 460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-24 14:45:50.442  INFO 460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-24 14:45:50.823  INFO 460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-24 14:45:50.859  INFO 460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2021-06-24 14:45:51.014  INFO 460 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c3b62e7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-24 14:45:51.043  INFO 460 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-06-24 14:45:51.213  INFO 460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2021-06-24 14:45:51.218  INFO 460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-24 14:45:51.219  INFO 460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-24 14:45:51.276  INFO 460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2021-06-24 14:45:51.277  INFO 460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 833 ms
+2021-06-24 14:45:51.352  INFO 460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-24 14:45:51.424  INFO 460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-24 14:45:51.843  INFO 460 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-24 14:45:52.082  WARN 460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 14:45:52.132  INFO 460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:45:52.242  INFO 460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-24 14:45:52.265  INFO 460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path '/demo'
+2021-06-24 14:45:52.272  INFO 460 --- [restartedMain] com.example.demo.App                     : Started App in 2.108 seconds (JVM running for 2.594)
+2021-06-24 14:45:54.055  INFO 460 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-24 14:45:54.055  INFO 460 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-24 14:45:54.056  INFO 460 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-24 14:45:54.087  INFO 460 --- [http-nio-9527-exec-1] com.example.demo.service.AlterPassword   : {username=1410025842@qq.com, password=1234556}
+2021-06-24 14:45:54.087  INFO 460 --- [http-nio-9527-exec-1] c.e.d.s.impl.AlterPasswordServerImpl     : 1234556
+2021-06-24 14:45:54.097 DEBUG 460 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : ==>  Preparing: select password from user where email=?
+2021-06-24 14:45:54.111 DEBUG 460 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : ==> Parameters: 1410025842@qq.com(String)
+2021-06-24 14:45:54.117 TRACE 460 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==    Columns: password
+2021-06-24 14:45:54.118 TRACE 460 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==        Row: 1234556
+2021-06-24 14:45:54.121 DEBUG 460 --- [http-nio-9527-exec-1] c.e.demo.dao.LoginSelect.emailLogin      : <==      Total: 1
+2021-06-24 14:45:54.136 DEBUG 460 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : ==>  Preparing: select id from user where email=?
+2021-06-24 14:45:54.137 DEBUG 460 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : ==> Parameters: 1410025842@qq.com(String)
+2021-06-24 14:45:54.138 TRACE 460 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==    Columns: id
+2021-06-24 14:45:54.138 TRACE 460 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==        Row: 6666
+2021-06-24 14:45:54.138 DEBUG 460 --- [http-nio-9527-exec-1] c.e.demo.dao.SelectDB.selectUserId       : <==      Total: 1
+2021-06-24 14:45:54.138  INFO 460 --- [http-nio-9527-exec-1] c.e.d.s.impl.AlterPasswordServerImpl     : {username=6666, password=1234556}
+2021-06-24 14:45:54.138 DEBUG 460 --- [http-nio-9527-exec-1] c.e.d.dao.UpdateDB.updateUserPassword    : ==>  Preparing: update user set password=? where id=?
+2021-06-24 14:45:54.138 DEBUG 460 --- [http-nio-9527-exec-1] c.e.d.dao.UpdateDB.updateUserPassword    : ==> Parameters: 1234556(String), 6666(String)
+2021-06-24 14:45:54.139 DEBUG 460 --- [http-nio-9527-exec-1] c.e.d.dao.UpdateDB.updateUserPassword    : <==    Updates: 1

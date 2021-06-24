@@ -40,14 +40,4 @@ public class GlobalExceptionHandler {
         log.error(e.getMessage(), e);
         return AjaxResult.otherError(ErrorEnum.INTERNAL_SERVER_ERROR);
     }
-
-    @ExceptionHandler(value = Exception.class)
-    @ResponseBody
-    private Map<String,Object> exceptionHandler(HttpServletRequest req, Exception e){
-        log.error(e.getMessage(),e);
-        Map<String,Object> modelMap = new HashMap<String, Object>();
-        modelMap.put("success",false);
-        modelMap.put("error",e.getMessage());
-        return modelMap;
-    }
 }
