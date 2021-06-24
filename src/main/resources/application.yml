@@ -55,7 +55,10 @@ logging:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
+server:
+  port: 9527
+  servlet:
+    context-path: /demo
 
 
 

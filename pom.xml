@@ -74,6 +74,45 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--  ip地址解析-->
+        <dependency>
+            <groupId>com.ggstar</groupId>
+            <artifactId>ipdatabase</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>demo</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
@@ -81,6 +120,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.4.1</version>
                 <configuration>
                     <excludes>
                         <exclude>
@@ -117,7 +157,7 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
+    <repositories><!--mvn install:install-file -Dfile=D:\GitHub\ipdatabase\target\ipdatabase-1.0-SNAPSHOT.jar -DgroupId=com.ggstar -DartifactId=ipdatabase -Dversion=1.0 -Dpackaging=jar-->
         <repository>
             <id>spring-releases</id>
             <name>Spring Releases</name>
@@ -126,6 +166,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -137,5 +178,6 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
 
 </project>
